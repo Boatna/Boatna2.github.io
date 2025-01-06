@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Learning สำหรับอบรมพนักงาน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <img src="assets/Bitwise-BW.png" alt="โลโก้บริษัท" class="logo">
+            <h1>e-Learning สำหรับอบรมพนักงาน</h1>
+            <nav>
+                <ul>
+                    <li><a href="contect.html">หน้าแรก</a></li>
+                    <li><a href="course.html">หลักสูตร</a></li>
+                    <li><a href="#">ข่าวสาร</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                    <li><a href="index.html">ลงชื่ออบรม</a></li>
+                </ul>
+            </nav>
+            <div id="userSection" class="user-section">
+                <span id="userName"></span>
+                <button id="logoutButton" onclick="logout()" style="display: none;">ออกจากระบบ</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="team">
+        <h2>ทีมงานของเรา</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="assets/member1.png" alt="รูปคุณสมชาย">
+                <h3>คุณ สุภาวดี เสนาะเสียง</h3>
+                <p>ตำแหน่ง: HR</p>
+                <p>เบอร์โทร: 123</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/member2.png" alt="รูปคุณสมหญิง">
+                <h3>คุณ ศุภโชค</h3>
+                <p>ตำแหน่ง: วิทยากร</p>
+                <p>เบอร์โทร: 456</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/member3.png" alt="รูปคุณวิชัย">
+                <h3>วิชัย ฉลาดล้ำ</h3>
+                <p>ตำแหน่ง: ผู้ช่วยวิทยากร</p>
+                <p>เบอร์โทร: 789</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <p>© 2024 e-Learning สำหรับอบรมพนักงาน | <a href="#">นโยบายความเป็นส่วนตัว</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Learning สำหรับอบรมพนักงาน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <img src="assets/Bitwise-BW.png" alt="โลโก้บริษัท" class="logo">
+            <h1>e-Learning สำหรับอบรมพนักงาน</h1>
+            <nav>
+                <ul>
+                    <li><a href="Home-page.html">หน้าแรก</a></li>
+                    <li><a href="course.html">หลักสูตร</a></li>
+                    <li><a href="#">ข่าวสาร</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                    <li><a href="index.html">ลงชื่ออบรม</a></li>
+                </ul>
+            </nav>
+            <div id="userSection" class="user-section">
+                <span id="userName"></span>
+                <button id="logoutButton" onclick="logout()" style="display: none;">ออกจากระบบ</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>e-Learning Registration</h1>
+        <form id="registrationForm">
+            <label for="name">ชื่อ:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="employeeId">รหัสพนักงาน:</label>
+            <input type="text" id="employeeId" name="employeeId" required>
+
+            <label for="department">ต่ำแหน่ง/แผนก:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="course">หลักสูตรที่ลงทะเบียน:</label>
+            <select id="course" name="course" required>
+                <option value="">-- เลือกหลักสูตร --</option>
+                <option value="หลักสูตร A">เครื่องปรับอากาศโซลาร์ไฮบริด TASAKI</option>
+                <option value="หลักสูตร B">หลักสูตร B</option>
+                <option value="หลักสูตร C">หลักสูตร C</option>
+            </select>
+            <br><br>
+
+            <button type="submit">ลงชื่อเข้าอบรม</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+
+    <footer>
+        <div class="container footer-container">
+            <p>© 2024 e-Learning สำหรับอบรมพนักงาน | <a href="#">นโยบายความเป็นส่วนตัว</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
