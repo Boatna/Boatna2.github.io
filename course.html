@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Learning สำหรับอบรมพนักงาน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #003d80;
+        }
+
+        /* Courses Section */
+        #courses {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .course {
+            margin: 15px auto;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 600px;
+        }
+
+        .course h3 {
+            color: #0056b3;
+        }
+
+        .course p {
+            font-size: 0.95rem;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #003d80;
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #f8f9fa;
+            color: #212529;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <img src="assets/Bitwise-BW.png" alt="โลโก้บริษัท" class="logo">
+            <h1>e-Learning สำหรับอบรมพนักงาน</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="course.html">หลักสูตร</a></li>
+                    <li><a href="#">ข่าวสาร</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+            <div id="userSection" class="user-section">
+                <span id="userName"></span>
+                <button id="logoutButton" onclick="logout()" style="display: none;">ออกจากระบบ</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="courses">
+        <h2>หลักสูตรที่เรามี</h2>
+    
+        <h3>🔧 เทคนิค & วิศวกรรม</h3>
+        <div class="course">
+            <h3>หลักสูตร 1: เครื่องปรับอากาศโซลาร์ไฮบริด TASAKI</h3>
+            <p>เรียนรู้พื้นฐาน การติดตั้งแผงโซล่าเซลล์และประสิทธิภาพเครื่องปรับอากาศโซลาร์ไฮบริด TASAKI</p>
+            <a href="courses/courses1.html" class="btn">ดูรายละเอียดหลักสูตร</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd41ewfcRYnqKFk_17-xNZA6m1EVZ09kjmFu7dPwRV-WEP5TQ/viewform?usp=preview" class="btn" target="_blank">เริ่มทดสอบ</a>
+        </div>
+    
+        <h3>📌 พัฒนาทักษะการทำงาน</h3>
+        <div class="course">
+            <h3>หลักสูตร 2: การบริหารจัดการเวลา</h3>
+            <p>เรียนรู้เทคนิคในการจัดการเวลาและเพิ่มประสิทธิภาพในการทำงาน.</p>
+            <a href="courses/courses2.html" class="btn">ดูรายละเอียดหลักสูตร</a>
+            <a href="https://forms.gle/your-google-form-link-2" class="btn" target="_blank">เริ่มทดสอบ</a>
+        </div>
+    
+        <div class="course">
+            <h3>หลักสูตร 3: การใช้เครื่องมือสำหรับการทำงานร่วมกัน</h3>
+            <p>เรียนรู้วิธีการใช้เครื่องมือออนไลน์ เช่น Google Workspace เพื่อเพิ่มประสิทธิภาพในการทำงานร่วมกัน.</p>
+            <a href="courses/courses3.html" class="btn">ดูรายละเอียดหลักสูตร</a>
+            <a href="https://forms.gle/your-google-form-link-3" class="btn" target="_blank">เริ่มทดสอบ</a>
+        </div>
+
+        <h3>📌 5 ส.</h3>
+        <div class="course">
+            <h3>หลักสูตร 4: เรียนรู้ไปกับ 5 ส.</h3>
+            <p>เรียนรู้วิธีการใช้เครื่องมือ 5 ส. เพื่อพัฒนาการที่ดีของพนักงาน</p>
+            <a href="courses/courses4.html" class="btn">ดูรายละเอียดหลักสูตร</a>
+            <a href="https://forms.gle/your-google-form-link-3" class="btn" target="_blank">เริ่มทดสอบ</a>
+        </div>
+
+        <h3>📌 Kaizen </h3>
+        <div class="course">
+            <h3>หลักสูตร 5: การทำ kaizen การทำ kaizen อย่างถูกวิธี</h3>
+            <p>เรียนรู้วิธีการทำ kaizen เพื่อการเรียนรู้ปรับปรุงแก้ไข</p>
+            <a href="courses/courses5.html" class="btn">ดูรายละเอียดหลักสูตร</a>
+            <a href="https://forms.gle/your-google-form-link-3" class="btn" target="_blank">เริ่มทดสอบ</a>
+        </div>
+
+    </section>
+    
+    <footer>
+        <div class="container footer-container">
+            <p>© 2024 e-Learning สำหรับอบรมพนักงาน | <a href="#">นโยบายความเป็นส่วนตัว</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
